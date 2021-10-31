@@ -18,7 +18,9 @@ The first step will be to collect quotes from QuoteBank that were made by people
 TODO
 ### Quote similarity analysis
 There exists many well established methods for quantifying the similarity between texts. In this project, we plan to use techniques from vector space retrieval, where the quotes first are transformed into a vector space. These vectors are then compared to each other using the cosine distance; where vectors with a small distance are considered to be similar. One way of transforming the quotes into a vector space is to use a vector of weights for some terms. As weights one can use the TF-IDF score, defined as follows:
-$$ tf(i,j) \cdot idf(i) $$
+```math
+tf(i,j) \cdot idf(i)
+```
 where $tf(i,j)$ is the term frequency of term $i$ in document $j$, and $idf(i)$ is the inverse document frequency, defined as:
 $$ idf(i) = log\left(\frac{n}{n_i}\right) $$
 where $n$ is the total number of documents (or quotes in this context) and $n_i$ the total number of documents in which term $i$ occur. An advantage of using TF-IDF scores as weights instead of only the counts of the term, is that the $idf$ part compensates for how common a term is in the collection of documents (quotes). This would make the vector representation more accurately reflect the distinction of quotes. 
