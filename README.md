@@ -11,7 +11,9 @@ We have chosen to begin by analysing quote correlation among politicians. Howeve
 ## Proposed additional datasets
 To be able to categorize the speakers in the QuoteBank dataset, we plan to use the provided metadata set, which was collected from Wikidata. 
 ## Methods
+<!-- 
 To begin with, we plan to only use quotes from a limited time span, e.g. for one particular year. This is because ....
+-->
 ### Data collection
 The first step will be to collect quotes from QuoteBank that were made by people from the selected category, i.e. politicians. This will be done using the provided metadata set which lists, among other speaker attributes, the occupation of the speaker.
 ### Intra-quote time correlation
@@ -30,16 +32,16 @@ where `n` is the total number of documents (or quotes in this context) and `n_i`
 ## Proposed timeline
 | Week |                        Task                        |
 |:----:|----------------------------------------------------|
-|  1   |                      TODO                          |
-|  2   |                      TODO                          |
-|  3   |   Add quote similarity to correlation analysis     |
-|  4   |   Work on the data story                           |
+|  1   |                      Focus on HW2                          |
+|  2   |                      Focus on HW2 / Start analyzing correlation between quotes from more than two politicians                          |
+|  3   |   Continue analyzing correlation between quotes from more than two politicians     |
+|  4   |   Add quote similarity to correlation analysis                           |
 |  5   |   Work on the data story (deadline 17/12)          |
 ## Organization within the team
-Kalle Bjurek - Writing the project proposal (i.e. README)
+Kalle Bjurek - Writing the project proposal, except method section about quote correlation (i.e. README)
 
-Lucas Braz - TODO
+Lucas Braz - Writing the method section about quote correlation, and implement a first version in a notebook.
 
-Pierre-Alain Durand - TODO
+Pierre-Alain Durand - Writing the method section about quote correlation, set up method in notebook for checking if there are any major events within the time span used for checking quote correlation.
 
-Clément Nicolle - TODO
+Clément Nicolle - Building pipeline in a notebook and demonstrate the correlation analysis using a randomly selected pair of politicians within a limited time span.
