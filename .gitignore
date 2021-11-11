@@ -1,3 +1,5 @@
 *.bz2
 *.crc
 *.parquet
+Tutorial_notebook.ipynb
+*.csv
