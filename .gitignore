@@ -1,5 +1,10 @@
 *.bz2
+*.zip
 *.crc
 *.parquet
 Tutorial_notebook.ipynb
 *.csv
+.DS_Store
+.ipynb_checkpoints/
+Biden_2020_v2
+Trump_2020_v2
