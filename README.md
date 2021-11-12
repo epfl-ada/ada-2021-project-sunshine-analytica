@@ -1,4 +1,4 @@
-# Quote correlation
+# Quote correlation in QuoteBank
 ## Abstract
 In today's connected world, news spread fast. When a public figure makes an announcement of some kind, it doesn't take long time for the rest of the world to obtain the information and possibly act on it.
 
@@ -18,7 +18,7 @@ To begin with, we plan to only use quotes from a limited time span, e.g. for one
 -->
 ### Data collection
 The first step will be to collect quotes from QuoteBank that were made by people from the selected category, i.e. politicians. This will be done using the provided metadata set which lists, among other speaker attributes, the occupation of the speaker.
-### Intra-quote time correlation
+### Analyzing correlation between time of quoting
 A fairly basic way to study the correlation between quotes from several politicians is to simply study the temporal correlation between their speeches.
 We extract the dates of each politician's quotes and we make a signal representing the number of quotes of each politician per week of the year. We can then apply temporal signal analysis tools such as the cross-correlation.
 ### Quote similarity analysis
