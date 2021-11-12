@@ -29,7 +29,7 @@ where `tf(i,j)` is the term frequency of term `i` in document `j`, and `idf(i)` 
 
 <img src="https://render.githubusercontent.com/render/math?math=idf(i) = log\left(\frac{n}{n_i}\right)">
 
-where `n` is the total number of documents (or quotes in this context) and `n_i` the total number of documents in which term `i` occur. An advantage of using TF-IDF scores as weights instead of only the counts of the term, is that the `idf` part compensates for how common a term is in the collection of documents (quotes). This would make the vector representation more accurately reflect the distinction of quotes. 
+where `n` is the total number of documents (or quotes in this context) and `n_i` the total number of documents in which term `i` occur. [1] An advantage of using TF-IDF scores as weights instead of only the counts of the term, is that the `idf` part compensates for how common a term is in the collection of documents (quotes). This would make the vector representation more accurately reflect the distinction of quotes. 
 
 ## Proposed timeline
 | Week |                        Task                        |
@@ -40,10 +40,13 @@ where `n` is the total number of documents (or quotes in this context) and `n_i`
 |  4   |   Add quote similarity to correlation analysis                           |
 |  5   |   Work on the data story (deadline 17/12)          |
 ## Organization within the team
-Kalle Bjurek - Writing the project proposal, except method section about quote correlation (i.e. README)
+Kalle Bjurek - Writing the project proposal, except method section about quote correlation (i.e. README). Implement pipeline stage for filtering the QuoteBank dataset to only contain quotes from politicians.
 
 Lucas Braz - Writing the method section about quote correlation, and implement a first version in a notebook.
 
-Pierre-Alain Durand - Writing the method section about quote correlation, set up method in notebook for checking if there are any major events within the time span used for checking quote correlation.
+Pierre-Alain Durand - Writing the method section about quote correlation, and implement a first version in a notebook.
 
-Clément Nicolle - Building pipeline in a notebook and demonstrate the correlation analysis using a randomly selected pair of politicians within a limited time span.
+Clément Nicolle - Demonstrate the quote similarity analysis using a randomly selected pair of politicians within a limited time span.
+
+## References
+[1] Karl Aberer, Lecture notes from CS-423 Distributed Information Systems
