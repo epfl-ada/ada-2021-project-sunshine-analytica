@@ -19,7 +19,8 @@ To begin with, we plan to only use quotes from a limited time span, e.g. for one
 ### Data collection
 The first step will be to collect quotes from QuoteBank that were made by people from the selected category, i.e. politicians. This will be done using the provided metadata set which lists, among other speaker attributes, the occupation of the speaker.
 ### Intra-quote time correlation
-TODO
+A fairly basic way to study the correlation between quotes from several politicians is to simply study the temporal correlation between their speeches.
+We extract the dates of each politician's quotes and we make a signal representing the number of quotes of each politician per week of the year. We can then apply temporal signal analysis tools such as the cross-correlation.
 ### Quote similarity analysis
 There exists many well established methods for quantifying the similarity between texts. In this project, we plan to use techniques from vector space retrieval, where the quotes first are transformed into a vector space. These vectors are then compared to each other using the cosine distance; where vectors with a small distance are considered to be similar. One way of transforming the quotes into a vector space is to use a vector of weights for some terms. As weights one can use the TF-IDF score, defined as follows:
 
