@@ -2,6 +2,7 @@
 *.zip
 *.crc
 *.parquet
+*.p
 Tutorial_notebook.ipynb
 *.csv
 .DS_Store
