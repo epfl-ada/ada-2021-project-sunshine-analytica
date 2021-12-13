@@ -2,14 +2,20 @@
 ## Abstract
 In today's connected world, news spread fast. When a public figure makes an announcement of some kind, it doesn't take long time for the rest of the world to obtain the information and possibly act on it.
 
+The aim of this project is to investigate similarities between US politicians whose quotes are included in QuoteBank. We will look at two different properties for solving this task: the actual content of the quotes and the time when the politicians are quoted. For each of these types of similarity measures, we will use a clustering algorithm to find potential clusters of politicians with similar charachteristics, and try to analyze these clusters.
+
+<!--
 The aim of this project is to investigate this phenomena by analyzing the  correlation among speeches made by different persons within some category (e.g. politicians, movie stars etc.). For instance, a quote of one politician might spread within the community and trigger an action, in the form of a quote, from another politician. Hence, by using the QuoteBank dataset, we will try to see if it is possible to identify speakers whose time of quotings are highly correlated. If time permits, we will refine this study by also including a quote similarity score when calculating the quote correlation. By including this, we aim for being more confident that the response quote actually is related with the preceding quote in terms of content.
+-->
 ## Research Questions
 We have chosen to begin by analysing quote correlation among politicians. However, the proposed method can be used for doing the same for other catogories of speakers. Hence we will aim for answering the following research questions:
 * Is there a high correlation between time of quoting for some pairs of politicians?
 * Does some pair of politicians make similar quotes in terms of content?
+<!--
 * By utilizing both quote time correlation and quote similarity, is it possible to identify pairs of politicians that use to act and respond to each others quotes?
-  
+
 Note that the part about analyzing the similarity of quote content will be added if time permits, if not, we will only consider the time correlation in our analysis and not include quote similarity.
+-->
 ## Proposed additional datasets
 To be able to categorize the speakers in the QuoteBank dataset, we plan to use the provided metadata set, which was collected from Wikidata. 
 ## Methods
