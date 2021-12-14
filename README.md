@@ -19,9 +19,10 @@ Note that the part about analyzing the similarity of quote content will be added
 ## Proposed additional datasets
 To be able to categorize the speakers in the QuoteBank dataset, we plan to use the provided metadata set, which was collected from Wikidata. 
 ## Methods
-<!-- 
-To begin with, we plan to only use quotes from a limited time span, e.g. for one particular year. This is because ....
--->
+### K-Shape
+One of our analysis method is to focus on quotes as time series indicating the number of weekly quotes by US politicians. In order to cluster all these time series, we quickly noticed that the use of K-means was inadequate. The algorithm systematically put the vast majority of time series in a single cluster.
+We then looked at a clustering method adapted to time series, based on the concept of cross-correlation between signals: K-Shape.
+The cross-correlation is itself based on a convolution between signals and allows to analyze the similarity between time signals ( as a distance), despite a temporal shift between them.
 ### Data collection
 The first step will be to collect quotes from QuoteBank that were made by people from the selected category, i.e. politicians. This will be done using the provided metadata set which lists, among other speaker attributes, the occupation of the speaker.
 ### Analyzing correlation between time of quoting
