@@ -38,7 +38,9 @@ where `tf(i,j)` is the term frequency of term `i` in document `j`, and `idf(i)` 
 <img src="https://render.githubusercontent.com/render/math?math=idf(i) = log\left(\frac{n}{n_i}\right)">
 
 where `n` is the total number of documents (or quotes in this context) and `n_i` the total number of documents in which term `i` occur. [1] An advantage of using TF-IDF scores as weights instead of only the counts of the term, is that the `idf` part compensates for how common a term is in the collection of documents (quotes). This would make the vector representation more accurately reflect the distinction of quotes. 
-
+### Method applied 
+We focused our quote similarity analysis, not on every quotes considered independently, but on the similarity between groups of quotes from a same politician. For doing this, we started by concatenating all quotes from a same politician and then vectorised this applying the TF-IDF method using stopwords. In order to decrease the number of features of our database, we then apply the NMF algorithm with an output on the 50-dimensions space. After considering DBSCAN and K-Mean algorithm for clustering our data, we finally pick the second one with k=14 regarding the silhouette score and Sum of Squared Error curves. We finnaly get clusters which can be represented by a politician and a set of heavily top words from a same topic.
+Repeting the same procees for different years, we can establish some statistics on each cluster and so topic like the ratio female/male or the repartition in parties of politician from this cluster.  
 ## Proposed timeline
 | Week |                        Task                        |
 |:----:|----------------------------------------------------|
@@ -56,5 +58,7 @@ Pierre-Alain Durand - Writing the method section about quote correlation, and im
 
 Clément Nicolle - Demonstrate the quote similarity analysis using a randomly selected pair of politicians within a limited time span.
 
+## Datastory
+https://kallebju.github.io/ada-website/
 ## References
 [1] Karl Aberer, Lecture notes from CS-423 Distributed Information Systems
